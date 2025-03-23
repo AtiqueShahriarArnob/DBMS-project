@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Meat Machine</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/0d41f2929c.js" crossorigin="anonymous"></script>
+    <!-- tailwind + daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .font {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    arnob
+
+<body class="font">
+    <header class="h-[650px] bg-cover " style="background-image: url('/images/meatBG.png');">
+        <!-- navbar -->
+        <div class="navbar text-white">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li class="text-red-800"><a>Home</a></li>
+                        <li class="text-red-800"><a>About Us</a></li>
+                        <li class="text-red-800">
+                            <a>Product</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="text-red-800">
+                            <a>Pages</a>
+                            <ul class="p-2">
+                                <li class="text-red-800"><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Contract Us</a></li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Meat Machine</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#E7BBBA]"><a>Home</a></li>
+                    <li class="text-[#E7BBBA]"><a>About Us</a></li>
+
+                    <li class="text-[#E7BBBA]">
+                        <details>
+                            <summary>Product</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="text-[#E7BBBA]">
+                        <details>
+                            <summary>Pages</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="text-[#E7BBBA]"><a>Contract Us</a></li>
+                    <li class="text-[#E7BBBA]"><a>Blog</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="p-2 rounded-lg bg-red-800">Order Online</a>
+            </div>
+        </div>
+        <!-- banner text -->
+         <div class="text-white">
+            <h1 class="text-6xl font-semibold ml-6 mt-28">From Tradition to<br>
+                Innovation: Protecting<br>
+                Meat Quality for Future<br> Generation
+            </h1>
+            <p class="mt-5 ml-6 text-[#CDCCCC]">Optimize your meat supply chain with real-time tracking,<br> predictive analytics, and automated alerts, minimizing spoilage<br> and maximizing profitability.</p>
+
+         </div>
+    </header>
+
+
 </body>
+
 </html>
